@@ -1,0 +1,18 @@
+{
+  "name": "Yube-Test",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Teste para Front-end na empresa Yube.",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "DCitalo",
+  "license": "MIT",
+  "dependencies": {
+    "air-datepicker": "^2.2.3",
+    "connect": "~3.1.1",
+    "serve-static": "~1.5.3"
+  },
+  "repository": {}
+}

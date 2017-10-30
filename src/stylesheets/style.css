@@ -1,0 +1,199 @@
+/*RESET*/
+@charse "UTf-8";
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Montserrat:400,600');
+*, *:after, *:before{
+	text-decoration: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: justify;
+}
+html, body, div, span, applet, object, iframe, table, caption,
+tbody, tfoot, thead, tr, th, td, del, dfn, em, font, img, ins,
+kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,
+acronym, address, big, cite, code, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus {
+    outline: 0;
+}
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+img{
+	width:100%;
+	height: auto;
+}
+/*RESET*/
+/*Fontes e Padroes*/
+.montserrat{
+	font-family: 'Montserrat', sans-serif;
+}
+.heebo{
+	font-family: 'Heebo', sans-serif;
+}
+.semi-bold{
+	font-weight: 600;
+}
+.bold{
+	font-weight: 700;
+}
+.text-center{
+	-moz-text-align-last: center;
+    text-align-last: center;
+}
+.color-1{
+	color: #FFFFFF;
+}
+.color-2{
+	color: #000000;
+}
+.color-3{
+	color: #F98100;
+}
+.color-4{
+	color: #B5B5B5;
+}
+.font-size-1{
+	font-size: 15px;
+}
+.font-size-2{
+	font-size: 16px;
+}
+.font-size-3{
+	font-size: 22px;
+}
+.font-size-4{
+	font-size: 76px;
+}
+.DIB{
+    display: inline-block;
+}
+.DBA{
+	display: block;
+	position: absolute;
+}
+.DF{
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;	
+}
+.DIF{
+	-webkit-display: inline-flex;
+	    -ms-display: inline-flex;
+	        display: inline-flex;	
+}
+.FW{
+	-webkit-flex-flow: wrap;
+	    -ms-flex-flow: wrap;
+	        flex-flow: wrap;
+}
+.PA{
+	position: absolute;
+}
+.PF{
+	position: fixed;
+}
+.DN{
+	display: none;
+}
+.DB{
+	display: block;
+}
+.FL{
+	float: left;
+}
+.FR{
+	float: right;
+}
+.hide{
+	visibility: hidden;
+	display: none;
+}
+/*Fontes e Padroes*/
+.container-100{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-90{
+	width:90%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-60{
+	width:60%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-50{
+	width:50%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+.container-40{
+	width:40%;
+	margin:0 auto;
+	position:relative;
+	height:auto;
+}
+header {
+    padding: 35px 80px 20%;
+    max-height: 790px;
+    min-height: 630px;
+}
+.parallax {
+    background-image: url("/images/hero.jpg");
+    background-attachment: fixed;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu {
+    justify-content: space-between;
+    width: 25%;
+}
+.crown-icon {
+    width: 7%;
+    margin: 30px auto;
+}
+.title {
+    padding: 40px 0px;
+    box-sizing: content-box;
+}
+.title > h1 {
+    margin: 20px 0px;
+}
