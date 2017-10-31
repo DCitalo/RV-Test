@@ -16,36 +16,36 @@
 				<li class="font-size-1 heebo">Guide</li>
 			</ul>
 		</nav>
-		<div class="container-40 text-center color-1 title">
+		<div class="container-40 semi-bold text-center color-1 title">
 			<div class="crown-icon icon">
 				<img src="/images/crown.svg" alt="Crown Icon">
 			</div>
 			<p class="font-size-3 montserrat">WELCOME TO</p>
 			<hr>
-			<h1 class="font-size-4 semi-bold montserrat">CHARLOTTE</h1>
+			<h1 class="font-size-4 montserrat">CHARLOTTE</h1>
 			<hr>
 			<sub class="font-size-3 montserrat">THE QUEEN CITY</sub>
 		</div>
 	</header>
-	<section class="DF FW container-60">
+	<section class="DF FW container-60 datapicker">
 		<div class="container-100 text-center">
 			<h3 class="font-size-3 montserrat">Select the dates to stay in Charlotte</h3>
 		</div>
 		<div class="container-50">
-			<div>
-				<label for="CheckIn">CHECK-IN</label>
-				<input name="CheckIn" placeholder="Choose a date">
+			<div class="date heebo container-60">
+				<label class="font-size-3 color-6" for="CheckIn">CHECK-IN</label>
+				<input id="CheckIn" class="font-size-2 color-4" name="CheckIn" placeholder="Choose a date" readonly="true">
 			</div>
-			<div>
-				<label for="CheckOut">CHECK-OUT</label>
-				<input name="CheckOut" placeholder="Choose a date">
+			<div class="date heebo container-60">
+				<label class="font-size-3 color-6" for="CheckOut">CHECK-OUT</label>
+				<input id="CheckOut" class="font-size-2 color-4" name="CheckOut" placeholder="Choose a date" readonly="true">
 			</div>
-			<div>
-				<button>Search Hotels</button>
+			<div class="search heebo container-60">
+				<button class="color-3 button search-button button-round">Search hotels</button>
 			</div>
 		</div>
 		<div class="container-50">
-			<div type="text" data-range="true" data-multiple-dates-separator=" - "  data-language="en"  class="datepicker-here"></div>
+			<div type="text" data-range="true" data-language="en"  class="datepicker-here container-60 heebo"></div>
 		</div>
 	</section>
 	<footer>
