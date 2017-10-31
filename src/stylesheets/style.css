@@ -182,7 +182,7 @@ header {
     min-height: 630px;
 }
 .parallax {
-    background-image: url("images/hero.jpg");
+    background-image: url("../images/hero.jpg");
     background-attachment: fixed;
     background-position: 0 0;
     background-repeat: no-repeat;

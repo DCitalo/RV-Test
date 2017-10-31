@@ -5,6 +5,7 @@ $(".datepicker-here").click(function() {
 		DateOut    = $(".-range-to-").attr('data-date'),
 		MonthOut    = $(".-range-to-").attr('data-month'),
 		YearOut    = $(".-range-to-").attr('data-year');
+
 	if (MonthIn == "1") {
 		MonthIn = "January";
 	}
@@ -77,7 +78,11 @@ $(".datepicker-here").click(function() {
 	if (MonthOut == "12") {
 		MonthOut = "December";
 	}
-
-	console.log(MonthIn +" "+ DateIn +", "+ YearIn);
-	console.log(MonthOut +" "+ DateOut +", "+ YearOut);
+	$("#CheckIn").attr('placeholder', MonthIn +" "+ DateIn +", "+ YearIn);
+	if (MonthOut == undefined) {
+		$("#CheckOut").attr('placeholder', "Choose a date");
+	}else{
+		$("#CheckOut").attr('placeholder', MonthOut +" "+ DateOut +", "+ YearOut);
+	}
 });
+	
