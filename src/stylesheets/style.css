@@ -227,7 +227,19 @@ header {
 .button-round {
     border-radius: 50px;
     border: 2px solid;
+    cursor: pointer;
 }
 .datepicker-here {
     margin: 20px auto;
+}
+.social {
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 30px auto;
+    width: 10%;
+    max-width: 190px;
+    min-width: 170px;
+}
+li.icon-social {
+    max-width: 34px;
 }

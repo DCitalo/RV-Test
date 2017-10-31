@@ -78,11 +78,16 @@ $(".datepicker-here").click(function() {
 	if (MonthOut == "12") {
 		MonthOut = "December";
 	}
-	$("#CheckIn").attr('placeholder', MonthIn +" "+ DateIn +", "+ YearIn);
+	if (MonthIn == undefined) {
+		$("#CheckIn").attr('placeholder', "Choose a date");
+	}else{
+		$("#CheckIn").attr('placeholder', MonthIn +" "+ DateIn +", "+ YearIn);
+	}
 	if (MonthOut == undefined) {
 		$("#CheckOut").attr('placeholder', "Choose a date");
 	}else{
 		$("#CheckOut").attr('placeholder', MonthOut +" "+ DateOut +", "+ YearOut);
 	}
 });
+
 	
