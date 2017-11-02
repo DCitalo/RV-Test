@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
 	
     <title>FrontEnd Test</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="stylesheets/style.css" media="all">
     <link href="stylesheets/datepicker.min.css" rel="stylesheet" type="text/css">
   </head>
@@ -33,20 +34,40 @@
 		</div>
 		<div class="container-50">
 			<div class="date heebo container-60">
-				<label class="font-size-3 color-6" for="CheckIn">CHECK-IN</label>
-				<input id="CheckIn" class="font-size-2 color-4" name="CheckIn" placeholder="Choose a date" readonly="true">
+				<label class="font-size-3 color-5" for="CheckIn">CHECK-IN</label>
+				<input id="CheckIn" class="font-size-2 color-3" name="CheckIn" placeholder="Choose a date" readonly="true">
 			</div>
 			<div class="date heebo container-60">
-				<label class="font-size-3 color-6" for="CheckOut">CHECK-OUT</label>
-				<input id="CheckOut" class="font-size-2 color-4" name="CheckOut" placeholder="Choose a date" readonly="true">
+				<label class="font-size-3 color-5" for="CheckOut">CHECK-OUT</label>
+				<input id="CheckOut" class="font-size-2 color-3" name="CheckOut" placeholder="Choose a date" readonly="true">
 			</div>
 			<div class="search container-60">
-				<button id="Search" class="color-3 heebo bold button search-button button-round">Search hotels</button>
+				<button id="Search" class="color-2 heebo bold button search-button button-round" onclick="SearchHotels()">Search hotels</button>
 			</div>
 		</div>
 		<div class="container-50">
 			<div type="text" data-range="true" data-language="en"  class="datepicker-here container-60 heebo"></div>
 		</div>
+	</section>
+	<section id="ResultsHotel" class="DF FW container-90 hotel-container hide">
+		<span class="status hide"></span>
+		<div class="container-100 text-center">
+			<h2 id="TitleDates" class="font-size-3 montserrat"></h2>
+		</div>
+		<div class="container-20">
+			<span>Filters</span>
+			<div class="DF FW ">
+				<label for="RangeFilter" class="container-100">Price Range</label>
+				<div id="slider-range" class="container-100 color-2"></div>
+				<div id="amount" class="container-100 DF FW color-2">
+					<span class='container-50 text-left'>Min<br/>$100</span>
+					<span class='container-50 text-right'>Max<br/>$600</span>
+				</div>
+			</div>
+		</div>
+		<ul id="HotelsList" class="container-80">
+			
+		</ul>
 	</section>
 	<footer>
 		<ul class="container-40 DF FW social">
@@ -57,7 +78,7 @@
 		<p class="text-center ">© 2004-2017 Visit Charlotte. All Rights Reserved. 500 S. College Street, Suite 300, Charlotte, NC 28202</p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="javascripts/default.js"></script> 
     <script src="javascripts/datepicker.min.js"></script>
     <script src="javascripts/i18n/datepicker.en.js"></script>

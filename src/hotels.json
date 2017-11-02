@@ -3,7 +3,7 @@
     {
       "name": "Super 8 Speedway/University",
       "description": "Just off Interstate 85, this hotel features free Wi-Fi and a daily continental breakfast with hot waffles. The Charlotte Motor Speedway is a 15 minute drive from the hotel.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/super-8.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/super-8.jpg",
       "rate": 3,
       "price": 180,
       "price_history": [
@@ -13,13 +13,18 @@
         { "month": "Apr", "value": 119 },
         { "month": "May", "value": 171 },
         { "month": "Jun", "value": 154 },
-        { "month": "Jul", "value": 163 }
+        { "month": "Jul", "value": 163 },
+        { "month": "Aug", "value": 130 },
+        { "month": "Sep", "value": 146 },
+        { "month": "Oct", "value": 154 },
+        { "month": "Nov", "value": 163 },
+        { "month": "Dec", "value": 171 }
       ]
     },
     {
       "name": "Omni Charlotte Hotel",
       "description": "The Omni Charlotte Hotel envelopes you in ultimate comfort with a signature touch of genuine North Carolina hospitality.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/omni-charlotte.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/omni-charlotte.jpg",
       "rate": 4,
       "price": 280.50,
       "price_history": [
@@ -29,13 +34,18 @@
         { "month": "Apr", "value": 229 },
         { "month": "May", "value": 272 },
         { "month": "Jun", "value": 249 },
-        { "month": "Jul", "value": 239 }
+        { "month": "Jul", "value": 239 },
+        { "month": "Aug", "value": 250 },
+        { "month": "Sep", "value": 220 },
+        { "month": "Oct", "value": 239 },
+        { "month": "Nov", "value": 280 },
+        { "month": "Dec", "value": 290 }
       ]
     },
     {
       "name": "Charlotte Marriott City Center",
       "description": "Located in Uptown Charlotte, this Marriott City Center hotel offers spacious rooms with a flat-screen TV and free WiFi in public areas. Facilities include a 24-hour fitness centre. Parking is offered for a fee.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/charlotte-marriot.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/charlotte-marriot.jpg",
       "rate": 4,
       "price": 190,
       "price_history": [
@@ -45,13 +55,18 @@
         { "month": "Apr", "value": 195 },
         { "month": "May", "value": 169.8 },
         { "month": "Jun", "value": 105.2 },
-        { "month": "Jul", "value": 182.5 }
+        { "month": "Jul", "value": 182.5 },
+        { "month": "Aug", "value": 135.9 },
+        { "month": "Sep", "value": 169 },
+        { "month": "Oct", "value": 140 },
+        { "month": "Nov", "value": 184 },
+        { "month": "Dec", "value": 137 }
       ]
     },
     {
       "name": "The Ivey's Hotel",
       "description": "This luxury boutique hotel is located in Downtown Charlotte and features a complimentary continental breakfast in the Library Lounge and free WiFi. The Mint Museum of Craft Design is 100 metres away.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/iveys-hotel.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/iveys-hotel.jpg",
       "rate": 4,
       "price": 290,
       "price_history": [
@@ -61,13 +76,18 @@
         { "month": "Apr", "value": 265.3 },
         { "month": "May", "value": 247.9 },
         { "month": "Jun", "value": 253 },
-        { "month": "Jul", "value": 223.7 }
+        { "month": "Jul", "value": 223.7 },
+        { "month": "Aug", "value": 258 },
+        { "month": "Sep", "value": 295 },
+        { "month": "Oct", "value": 249 },
+        { "month": "Nov", "value": 295 },
+        { "month": "Dec", "value": 300 }
       ]
     },
     {
       "name": "The Ritz-Carlton, Charlotte",
       "description": "In the heart of downtown Charlotte, The Ritz-Carlton, Charlotte has luxurious rooms with a 42' flat-screen TV and a DVD player. Facilities include an indoor pool and spa",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/ritz-carlton.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/ritz-carlton.jpg",
       "rate": 3,
       "price": 140,
       "price_history": [
@@ -77,13 +97,18 @@
         { "month": "Apr", "value": 139.6 },
         { "month": "May", "value": 137.2 },
         { "month": "Jun", "value": 172.8 },
-        { "month": "Jul", "value": 156.2 }
+        { "month": "Jul", "value": 156.2 },
+        { "month": "Aug", "value": 170 },
+        { "month": "Sep", "value": 130 },
+        { "month": "Oct", "value": 145 },
+        { "month": "Nov", "value": 159 },
+        { "month": "Dec", "value": 189 }
       ]
     },
     {
       "name": "Aloft Charlotte Uptown at the EpiCentre",
       "description": "Located in the heart of Uptown Charlotte, this boutique hotel features on-site dining and live entertainment. An indoor pool and free Wi-Fi are provided. A Charlotte light rail station is adjacent to the property.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/aloft-charlotte.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/aloft-charlotte.jpg",
       "rate": 5,
       "price": 600.10,
       "price_history": [
@@ -93,13 +118,18 @@
         { "month": "Apr", "value": 249 },
         { "month": "May", "value": 210 },
         { "month": "Jun", "value": 373 },
-        { "month": "Jul", "value": 326 }
+        { "month": "Jul", "value": 326 },
+        { "month": "Aug", "value": 212 },
+        { "month": "Sep", "value": 263 },
+        { "month": "Oct", "value": 380 },
+        { "month": "Nov", "value": 290 },
+        { "month": "Dec", "value": 300 }
       ]
     },
     {
       "name": "Courtyard Charlotte City Center",
       "description": "Located in the heart of downtown Charlotte, North Carolina, this hotel is within walking distance of Blumenthal Performing Arts Center and features a skyline pool and free in-room Wi-Fi.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/courtyard-charlotte.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/courtyard-charlotte.jpg",
       "rate": 3,
       "price": 190.90,
       "price_history": [
@@ -109,13 +139,18 @@
         { "month": "Apr", "value": 200 },
         { "month": "May", "value": 185 },
         { "month": "Jun", "value": 198 },
-        { "month": "Jul", "value": 180 }
+        { "month": "Jul", "value": 180 },
+        { "month": "Aug", "value": 163 },
+        { "month": "Sep", "value": 170 },
+        { "month": "Oct", "value": 160 },
+        { "month": "Nov", "value": 172 },
+        { "month": "Dec", "value": 190 }
       ]
     },
     {
       "name": "Facilities of SpringHill Suites by Marriott Charlotte Uptown",
       "description": "Located 201 m from Mint Museum of Craft Design in Charlotte, SpringHill Suites by Marriott Charlotte Uptown features free WiFi access and private parking.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/spring-hill-marriot.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/spring-hill-marriot.jpg",
       "rate": 5,
       "price": 400,
       "price_history": [
@@ -125,13 +160,18 @@
         { "month": "Apr", "value": 433.6 },
         { "month": "May", "value": 428.4 },
         { "month": "Jun", "value": 415 },
-        { "month": "Jul", "value": 412 }
+        { "month": "Jul", "value": 412 },
+        { "month": "Aug", "value": 420 },
+        { "month": "Sep", "value": 430 },
+        { "month": "Oct", "value": 450 },
+        { "month": "Nov", "value": 400 },
+        { "month": "Dec", "value": 410 }
       ]
     },
     {
       "name": "Holiday Inn Charlotte-Center City",
       "description": "Located in the city centre of Charlotte, North Carolina, surrounded by local attractions including the Charlotte Convention Center, this hotel features an on-site restaurant and a modern, rooftop pool offering city views.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/holiday-inn.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/holiday-inn.jpg",
       "rate": 5,
       "price": 290,
       "price_history": [
@@ -141,13 +181,18 @@
         { "month": "Apr", "value": 352 },
         { "month": "May", "value": 257.8 },
         { "month": "Jun", "value": 300 },
-        { "month": "Jul", "value": 289 }
+        { "month": "Jul", "value": 289 },
+        { "month": "Aug", "value": 235 },
+        { "month": "Sep", "value": 257 },
+        { "month": "Oct", "value": 239 },
+        { "month": "Nov", "value": 260 },
+        { "month": "Dec", "value": 290 }
       ]
     },
     {
       "name": "Dunhill Hotel",
       "description": "Centrally in downtown Charlotte, this historic hotel has been open since 1929 and features unique architecture. Complimentary expanded continental breakfast, free Wi-Fi, and luxurious rooms with a flat-screen TV are provided.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/dunhill-hotel.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/dunhill-hotel.jpg",
       "rate": 3,
       "price": 175,
       "price_history": [
@@ -157,13 +202,18 @@
         { "month": "Apr", "value": 197 },
         { "month": "May", "value": 233 },
         { "month": "Jun", "value": 165 },
-        { "month": "Jul", "value": 199.4 }
+        { "month": "Jul", "value": 199.4 },
+        { "month": "Aug", "value": 159 },
+        { "month": "Sep", "value": 134 },
+        { "month": "Oct", "value": 210 },
+        { "month": "Nov", "value": 180 },
+        { "month": "Dec", "value": 200 }
       ]
     },
     {
       "name": "Kimpton Tryon Park Hotel",
       "description": "Set in the Downtown Charlotte district in Charlotte, 400 metres from Epicenter, Kimpton Tryon Park Hotel features air-conditioned rooms and private parking. Guests can enjoy the on-site bar.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/kimpton-tryon.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/kimpton-tryon.jpg",
       "rate": 4,
       "price": 330,
       "price_history": [
@@ -173,13 +223,18 @@
         { "month": "Apr", "value": 336.3 },
         { "month": "May", "value": 308 },
         { "month": "Jun", "value": 312 },
-        { "month": "Jul", "value": 347.2 }
+        { "month": "Jul", "value": 347.2 },
+        { "month": "Aug", "value": 313 },
+        { "month": "Sep", "value": 346 },
+        { "month": "Oct", "value": 379 },
+        { "month": "Nov", "value": 347 },
+        { "month": "Dec", "value": 396 }
       ]
     },
     {
       "name": "Hilton Charlotte Center City",
       "description": "Ideally located in the center of Charlotte city center, this hotel is directly across from the Charlotte Convention Center and features a large variety of modern services and state-of-the-art amenities.",
-      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/images/hotels/hilton-charlotte.jpg",
+      "image": "http://www.raphaelfabeni.com.br/rv/test-resources/hotels/hilton-charlotte.jpg",
       "rate": 2,
       "price": 175,
       "price_history": [
@@ -189,7 +244,12 @@
         { "month": "Apr", "value": 160.3 },
         { "month": "May", "value": 174.9 },
         { "month": "Jun", "value": 155 },
-        { "month": "Jul", "value": 166 }
+        { "month": "Jul", "value": 166 },
+        { "month": "Aug", "value": 180 },
+        { "month": "Sep", "value": 123 },
+        { "month": "Oct", "value": 187 },
+        { "month": "Nov", "value": 190 },
+        { "month": "Dec", "value": 169 }
       ]
     }
   ]
