@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 	
     <title>FrontEnd Test</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="stylesheets/jquery-ui.css">
     <link rel="stylesheet" href="stylesheets/style.css" media="all">
     <link href="stylesheets/datepicker.min.css" rel="stylesheet" type="text/css">
   </head>
@@ -55,13 +55,23 @@
 			<h2 id="TitleDates" class="font-size-3 montserrat"></h2>
 		</div>
 		<div class="container-20">
-			<span>Filters</span>
-			<div class="DF FW ">
-				<label for="RangeFilter" class="container-100">Price Range</label>
-				<div id="slider-range" class="container-100 color-2"></div>
-				<div id="amount" class="container-100 DF FW color-2">
-					<span class='container-50 text-left'>Min<br/>$100</span>
-					<span class='container-50 text-right'>Max<br/>$600</span>
+			<span class="title-filters font-size-3 montserrat">Filters</span>
+			<div class="filter-range filter">
+				<label for="RangeFilter" class="heebo container-100 color-3 font-size-5">Price Range</label>
+				<div id="slider-range"></div>
+				<div id="amount" class="container-100 DF FW">
+					<span class="container-50 text-left color-3 font-size-5 heebo">Min<br/><b id="Min" class="color-2 font-size-3">$100</b></span>
+					<span class="container-50 text-right color-3 font-size-5 heebo">Max<br/><b id="Max" class="color-2 font-size-3">$600</b></span>
+				</div>
+			</div>
+			<div class="filter-star filter">
+			    <span class="color-3 font-size-5 heebo">Stars</span>
+			    <div class="rating DF FW text-center">
+					<span class="ratings_stars" data-stars="5"></span>
+					<span class="ratings_stars" data-stars="4"></span>
+					<span class="ratings_stars" data-stars="3"></span>
+					<span class="ratings_stars" data-stars="2"></span>
+					<span class="ratings_stars" data-stars="1"></span>
 				</div>
 			</div>
 		</div>
@@ -79,6 +89,9 @@
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script src="javascripts/default.js"></script> 
     <script src="javascripts/datepicker.min.js"></script>
     <script src="javascripts/i18n/datepicker.en.js"></script>

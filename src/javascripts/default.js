@@ -190,60 +190,106 @@ function SearchHotels(){
 	            $("span.status").html("O servidor não conseguiu processar o pedido");
 	        },
 	        success: function(retorno) {
-	                var clientes = retorno;
-	                $.each(clientes.hotels,function(i, hotel){
+	                var ret = retorno;
+	                $.each(ret.hotels,function(i, hotel){
 	                    var item = "<li class='DF FW container-100 hotel-container'>\
-	                    				<div class='container-30'>\
-	                    					<img class='' src="+hotel.image+" />\
+	                    				<div class='cont-img-hotel container-30'>\
+	                    					<img src="+hotel.image+" />\
 	                    				</div>\
-	                    				<div class='container-60'>\
-	                    					<ul class='"+hotel.rate+ "rating'>\
-	                    					</ul>\
-	                    					<h4>"+hotel.name+"</h4>\
-	                    					<em>"+hotel.description+"</em>\
-	                    					<div class='container-100'>\
-		                    					<button class='color-2 heebo bold button button-round'>Book now</button>\
-		                    					<button class='color-4 heebo bold button button-round'>Price history</button>\
+	                    				<div id='Description-"+i+"' class='container-70 DF FW'>\
+	                    					<div class=container-80>\
+		                    					<ul class='star-rank container-100' data-rank="+hotel.rate+">\
+		                    					</ul>\
+		                    					<h4 class='hotel-name heebo color-2 bold font-size-2 container-100'>"+hotel.name+"</h4>\
+		                    					<em class='hotel-desc heebo color-3 font-size-1 container-100'>"+hotel.description+"</em>\
+		                    					<div class='container-100'>\
+			                    					<button class='color-2 heebo bold button button-round'>Book now</button>\
+			                    					<button class='color-4 heebo bold button button-round PH' data-PH="+i+">Price history</button>\
+			                    				</div>\
+			                    			</div>\
+		                    				<div class='DF TotalPrice'>\
+		                    					<span class='text-right heebo font-size-2 color-6'>Total<br><b class='price montserrat color-4' data-price="+hotel.price+">$"+hotel.price+"</b></span>\
 		                    				</div>\
 	                    				</div>\
-	                    				<div class='container-10'>\
-	                    					<span class='price' >"+hotel.price+"</span>\
+	                    				<div id="+i+" class='container-70 hide DF FW'>\
+	                    					<div class='container-50 text-left'>\
+	                    						<span class='Heebo bold color-2'>Price history for 2017</span>\
+	                    					</div>\
+	                    					<div class='container-50 text-right '>\
+	                    						<span class='back-desc heebo color-5 PH' data-PH="+i+">Back to description</span>\
+	                    					</div>\
+											<div id='Chart-"+i+"' class='container-100' style='height: 200px;'></div>\
 	                    				</div>\
 	                    			</li>";
 	                    $("#HotelsList").append(item);
 	                }); 
+	                $(".star-rank").each(function() {
+	                	var Stars = $(this).attr('data-rank');
+	                	var i;
+	                	for (i = 1; i <= Stars; i++) {
+	                		$(this).append("<li class='stars'></li>");
+	                	}
+	                });
+	                $(".PH").click(function() {
+	                	var Pos = $(this).attr('data-PH');
+	                	console.log(Pos)
+	                	$('#Description-'+Pos).toggleClass('hide');
+	                	$('#'+Pos).toggleClass('hide');
+	                		Morris.Bar({
+							  element: "Chart-"+Pos,
+							  resize: true,
+							  data: [
+							  	{x: ret.hotels[Pos].price_history[0].month, y: ret.hotels[Pos].price_history[0].value},
+							  	{x: ret.hotels[Pos].price_history[1].month, y: ret.hotels[Pos].price_history[1].value},
+							  	{x: ret.hotels[Pos].price_history[2].month, y: ret.hotels[Pos].price_history[2].value},
+							  	{x: ret.hotels[Pos].price_history[3].month, y: ret.hotels[Pos].price_history[3].value},
+							  	{x: ret.hotels[Pos].price_history[4].month, y: ret.hotels[Pos].price_history[4].value},
+							  	{x: ret.hotels[Pos].price_history[5].month, y: ret.hotels[Pos].price_history[5].value},
+							  	{x: ret.hotels[Pos].price_history[6].month, y: ret.hotels[Pos].price_history[6].value}
+							  ],
+							  grid: false,
+							  xkey: 'x',
+							  ykeys: ['y'],
+							  labels: ['Price']
+							}).on('click', function(i, row){
+							  console.log(i, row);
+							});
+	                });
 	                $("span.status").toggleClass('hide');
 			} 
 		});
 	}
 }
 $(document).ready(function() {
-	$( "#slider-range" ).slider({
+	$("#slider-range").slider({
 		range: true,
 		min: 100,
-		max: 600,
-		values: [0,600],
+		max: 601,
+		values: [0,601],
 		slide: function( event, ui ) {
 		  	var min = ui.values[0];//min
 		  	var max = ui.values[1];//max
-		  	console.log(ui.values[0]);
-		  	console.log(ui.values[1]);
+		  	$("#Min").html("$"+min);
+		  	$("#Max").html("$"+max);
 		  	$(".price").each(function(){
-		  		var HP  = $(this).html();
-		  		if (max < HP) {
-		  			$(this).closest('.hotel-container').addClass('hide');
-			  	}
-		  		if (max > HP) {
-		  			$(this).closest('.hotel-container').removeClass('hide');
-			  	}
-		  		if (min > HP) {
-		  			$(this).closest('.hotel-container').addClass('hide');
-			  	}
-		  		if (min < HP) {
-		  			$(this).closest('.hotel-container').removeClass('hide');
+		  		var HP  = $(this).attr('data-price');
+		  		if (min >= HP || max <= HP) {
+		  			$(this).closest('.hotel-container').addClass('hide-slide');
+			  	}else{
+			  		$(this).closest('.hotel-container').removeClass('hide-slide');
 			  	}
 			});
-		$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +" - $" + $( "#slider-range" ).slider( "values", 1 ) );		 
 		} 
+	});
+	$(".ratings_stars").click(function(event) {
+		var qntstars = $(this).attr('data-stars');
+		$(".star-rank").each(function() {
+			var Stars = $(this).attr('data-rank');
+			if (Stars <= qntstars) {
+				$(this).closest('.hotel-container').removeClass('hide-star');
+			}else{
+				$(this).closest('.hotel-container').addClass('hide-star');
+			}
+		});
 	}); 
 });

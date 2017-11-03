@@ -13,12 +13,7 @@
         { "month": "Apr", "value": 119 },
         { "month": "May", "value": 171 },
         { "month": "Jun", "value": 154 },
-        { "month": "Jul", "value": 163 },
-        { "month": "Aug", "value": 130 },
-        { "month": "Sep", "value": 146 },
-        { "month": "Oct", "value": 154 },
-        { "month": "Nov", "value": 163 },
-        { "month": "Dec", "value": 171 }
+        { "month": "Jul", "value": 163 }
       ]
     },
     {
@@ -34,12 +29,7 @@
         { "month": "Apr", "value": 229 },
         { "month": "May", "value": 272 },
         { "month": "Jun", "value": 249 },
-        { "month": "Jul", "value": 239 },
-        { "month": "Aug", "value": 250 },
-        { "month": "Sep", "value": 220 },
-        { "month": "Oct", "value": 239 },
-        { "month": "Nov", "value": 280 },
-        { "month": "Dec", "value": 290 }
+        { "month": "Jul", "value": 239 } 
       ]
     },
     {
@@ -55,12 +45,7 @@
         { "month": "Apr", "value": 195 },
         { "month": "May", "value": 169.8 },
         { "month": "Jun", "value": 105.2 },
-        { "month": "Jul", "value": 182.5 },
-        { "month": "Aug", "value": 135.9 },
-        { "month": "Sep", "value": 169 },
-        { "month": "Oct", "value": 140 },
-        { "month": "Nov", "value": 184 },
-        { "month": "Dec", "value": 137 }
+        { "month": "Jul", "value": 182.5 }        
       ]
     },
     {
@@ -76,12 +61,7 @@
         { "month": "Apr", "value": 265.3 },
         { "month": "May", "value": 247.9 },
         { "month": "Jun", "value": 253 },
-        { "month": "Jul", "value": 223.7 },
-        { "month": "Aug", "value": 258 },
-        { "month": "Sep", "value": 295 },
-        { "month": "Oct", "value": 249 },
-        { "month": "Nov", "value": 295 },
-        { "month": "Dec", "value": 300 }
+        { "month": "Jul", "value": 223.7 }
       ]
     },
     {
@@ -97,12 +77,7 @@
         { "month": "Apr", "value": 139.6 },
         { "month": "May", "value": 137.2 },
         { "month": "Jun", "value": 172.8 },
-        { "month": "Jul", "value": 156.2 },
-        { "month": "Aug", "value": 170 },
-        { "month": "Sep", "value": 130 },
-        { "month": "Oct", "value": 145 },
-        { "month": "Nov", "value": 159 },
-        { "month": "Dec", "value": 189 }
+        { "month": "Jul", "value": 156.2 }
       ]
     },
     {
@@ -118,12 +93,7 @@
         { "month": "Apr", "value": 249 },
         { "month": "May", "value": 210 },
         { "month": "Jun", "value": 373 },
-        { "month": "Jul", "value": 326 },
-        { "month": "Aug", "value": 212 },
-        { "month": "Sep", "value": 263 },
-        { "month": "Oct", "value": 380 },
-        { "month": "Nov", "value": 290 },
-        { "month": "Dec", "value": 300 }
+        { "month": "Jul", "value": 326 }
       ]
     },
     {
@@ -139,12 +109,7 @@
         { "month": "Apr", "value": 200 },
         { "month": "May", "value": 185 },
         { "month": "Jun", "value": 198 },
-        { "month": "Jul", "value": 180 },
-        { "month": "Aug", "value": 163 },
-        { "month": "Sep", "value": 170 },
-        { "month": "Oct", "value": 160 },
-        { "month": "Nov", "value": 172 },
-        { "month": "Dec", "value": 190 }
+        { "month": "Jul", "value": 180 }
       ]
     },
     {
@@ -160,12 +125,7 @@
         { "month": "Apr", "value": 433.6 },
         { "month": "May", "value": 428.4 },
         { "month": "Jun", "value": 415 },
-        { "month": "Jul", "value": 412 },
-        { "month": "Aug", "value": 420 },
-        { "month": "Sep", "value": 430 },
-        { "month": "Oct", "value": 450 },
-        { "month": "Nov", "value": 400 },
-        { "month": "Dec", "value": 410 }
+        { "month": "Jul", "value": 412 }
       ]
     },
     {
@@ -181,12 +141,7 @@
         { "month": "Apr", "value": 352 },
         { "month": "May", "value": 257.8 },
         { "month": "Jun", "value": 300 },
-        { "month": "Jul", "value": 289 },
-        { "month": "Aug", "value": 235 },
-        { "month": "Sep", "value": 257 },
-        { "month": "Oct", "value": 239 },
-        { "month": "Nov", "value": 260 },
-        { "month": "Dec", "value": 290 }
+        { "month": "Jul", "value": 289 }
       ]
     },
     {
@@ -202,12 +157,7 @@
         { "month": "Apr", "value": 197 },
         { "month": "May", "value": 233 },
         { "month": "Jun", "value": 165 },
-        { "month": "Jul", "value": 199.4 },
-        { "month": "Aug", "value": 159 },
-        { "month": "Sep", "value": 134 },
-        { "month": "Oct", "value": 210 },
-        { "month": "Nov", "value": 180 },
-        { "month": "Dec", "value": 200 }
+        { "month": "Jul", "value": 199.4 }
       ]
     },
     {
@@ -223,12 +173,7 @@
         { "month": "Apr", "value": 336.3 },
         { "month": "May", "value": 308 },
         { "month": "Jun", "value": 312 },
-        { "month": "Jul", "value": 347.2 },
-        { "month": "Aug", "value": 313 },
-        { "month": "Sep", "value": 346 },
-        { "month": "Oct", "value": 379 },
-        { "month": "Nov", "value": 347 },
-        { "month": "Dec", "value": 396 }
+        { "month": "Jul", "value": 347.2 }
       ]
     },
     {
@@ -244,12 +189,7 @@
         { "month": "Apr", "value": 160.3 },
         { "month": "May", "value": 174.9 },
         { "month": "Jun", "value": 155 },
-        { "month": "Jul", "value": 166 },
-        { "month": "Aug", "value": 180 },
-        { "month": "Sep", "value": 123 },
-        { "month": "Oct", "value": 187 },
-        { "month": "Nov", "value": 190 },
-        { "month": "Dec", "value": 169 }
+        { "month": "Jul", "value": 166 }
       ]
     }
   ]
