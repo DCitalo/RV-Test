@@ -14,16 +14,16 @@ Os arquivos que foram feitos para o teste (default.js e style.css) estão minifi
 
 Para ver o teste tem algumas opções:
 
-entre por esse [link](https://dcitalo.github.io/RV-test/src/)
+entre por esse [link](https://dcitalo.github.io/RV-Test/src/)
 
 ou
 
-#1 Baixe ou clone o repositorio
+##1 Baixe ou clone o repositorio
 
-#2 Instale npm para conseguir ver localmente 
+##2 Instale npm para conseguir ver localmente 
 
 	`$ npm install`
 
 	`$ npm start`
 
-#3 O teste estará no link `http://localhost:4041/`
+##3 O teste estará no link `http://localhost:4041/`
