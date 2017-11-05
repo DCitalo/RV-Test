@@ -172,6 +172,7 @@ function SearchHotels(){
 		$("#ResultsHotel").removeClass('hide');
 		$("#TitleDates").html("Please choose a date");
 	}else{
+		$("#Filters").removeClass('hide')
 		$("#TitleDates").html("Best choices between "+ MonthIn +" "+ DateIn +", "+ YearIn +" and "+ MonthOut +" "+ DateOut +", "+ YearOut);
     	var url = "hotels.json";
 	    $.ajax({
