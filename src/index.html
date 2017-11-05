@@ -2,16 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-	
     <title>FrontEnd Test</title>
     <link rel="stylesheet" href="stylesheets/jquery-ui.css">
     <link rel="stylesheet" href="stylesheets/style.css" media="all">
     <link href="stylesheets/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="images/crown.svg"/>
   </head>
   <body>
 	<header class="parallax">
 		<nav class="container-90 color-1">
-			<ul class="DF FW menu">
+			<div id="nav-icon" class="hide tb-show">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+			<ul class="DF FW menu tb-hide">
 				<li class="font-size-1 heebo">The Queen City</li>
 				<li class="font-size-1 heebo">My Reservartions</li>
 				<li class="font-size-1 heebo">Guide</li>
@@ -28,24 +34,24 @@
 			<sub class="font-size-3 montserrat">THE QUEEN CITY</sub>
 		</div>
 	</header>
-	<section class="DF FW container-60 datapicker">
-		<div class="container-100 text-center">
+	<section class="DF FW container-60 datapicker mb-container-100">
+		<div class="container-100 text-center title-dates">
 			<h3 class="font-size-3 montserrat">Select the dates to stay in Charlotte</h3>
 		</div>
-		<div class="container-50">
+		<div class="container-50 tb-container-100 tb-text-center checks">
 			<div class="date heebo container-60">
-				<label class="font-size-3 color-5" for="CheckIn">CHECK-IN</label>
-				<input id="CheckIn" class="font-size-2 color-3" name="CheckIn" placeholder="Choose a date" readonly="true">
+				<label class="font-size-3 color-5 tb-text-center" for="CheckIn">CHECK-IN</label>
+				<input id="CheckIn" class="font-size-2 color-3 tb-text-center" name="CheckIn" placeholder="Choose a date" readonly="true">
 			</div>
 			<div class="date heebo container-60">
-				<label class="font-size-3 color-5" for="CheckOut">CHECK-OUT</label>
-				<input id="CheckOut" class="font-size-2 color-3" name="CheckOut" placeholder="Choose a date" readonly="true">
+				<label class="font-size-3 color-5 tb-text-center" for="CheckOut">CHECK-OUT</label>
+				<input id="CheckOut" class="font-size-2 color-3 tb-text-center" name="CheckOut" placeholder="Choose a date" readonly="true">
 			</div>
 			<div class="search container-60">
 				<button id="Search" class="color-2 heebo bold button search-button button-round" onclick="SearchHotels()">Search hotels</button>
 			</div>
 		</div>
-		<div class="container-50">
+		<div class="container-50 tb-container-100 calendar">
 			<div type="text" data-range="true" data-language="en"  class="datepicker-here container-60 heebo"></div>
 		</div>
 	</section>
@@ -54,9 +60,9 @@
 		<div class="container-100 text-center">
 			<h2 id="TitleDates" class="font-size-3 montserrat"></h2>
 		</div>
-		<div class="container-20">
-			<span class="title-filters font-size-3 montserrat">Filters</span>
-			<div class="filter-range filter">
+		<div class="container-20 tb-container-100">
+			<span class="title-filters font-size-3 montserrat tb-text-center">Filters</span>
+			<div class="filter-range filter tb-container-50">
 				<label for="RangeFilter" class="heebo container-100 color-3 font-size-5">Price Range</label>
 				<div id="slider-range"></div>
 				<div id="amount" class="container-100 DF FW">
@@ -64,7 +70,7 @@
 					<span class="container-50 text-right color-3 font-size-5 heebo">Max<br/><b id="Max" class="color-2 font-size-3">$600</b></span>
 				</div>
 			</div>
-			<div class="filter-star filter">
+			<div class="filter-star filter tb-container-50">
 			    <span class="color-3 font-size-5 heebo">Stars</span>
 			    <div class="rating DF FW text-center">
 					<span class="ratings_stars" data-stars="5"></span>
@@ -75,7 +81,7 @@
 				</div>
 			</div>
 		</div>
-		<ul id="HotelsList" class="container-80">
+		<ul id="HotelsList" class="container-80 tb-container-100">
 			
 		</ul>
 	</section>
@@ -85,13 +91,11 @@
 			<li class="icon-social"><img src="images/twitter.svg"></li>
 			<li class="icon-social"><img src="images/instagram.svg"></li>
 		</ul>
-		<p class="text-center ">© 2004-2017 Visit Charlotte. All Rights Reserved. 500 S. College Street, Suite 300, Charlotte, NC 28202</p>
+		<p class="text-center color-3">© 2004-2017 Visit Charlotte. All Rights Reserved. 500 S. College Street, Suite 300, Charlotte, NC 28202</p>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.0/Chart.min.js"></script>
     <script src="javascripts/default.js"></script> 
     <script src="javascripts/datepicker.min.js"></script>
     <script src="javascripts/i18n/datepicker.en.js"></script>

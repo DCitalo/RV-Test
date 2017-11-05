@@ -193,32 +193,33 @@ function SearchHotels(){
 	                var ret = retorno;
 	                $.each(ret.hotels,function(i, hotel){
 	                    var item = "<li class='DF FW container-100 hotel-container'>\
-	                    				<div class='cont-img-hotel container-30'>\
+	                    				<div class='cont-img-hotel container-30 tb-container-100'>\
 	                    					<img src="+hotel.image+" />\
 	                    				</div>\
-	                    				<div id='Description-"+i+"' class='container-70 DF FW'>\
-	                    					<div class=container-80>\
+	                    				<div id='Description-"+i+"' class='container-70 DF FW tb-container-100'>\
+	                    					<div class='container-80 tb-container-100'>\
 		                    					<ul class='star-rank container-100' data-rank="+hotel.rate+">\
 		                    					</ul>\
 		                    					<h4 class='hotel-name heebo color-2 bold font-size-2 container-100'>"+hotel.name+"</h4>\
 		                    					<em class='hotel-desc heebo color-3 font-size-1 container-100'>"+hotel.description+"</em>\
 		                    					<div class='container-100'>\
-			                    					<button class='color-2 heebo bold button button-round'>Book now</button>\
-			                    					<button class='color-4 heebo bold button button-round PH' data-PH="+i+">Price history</button>\
+			                    					<button class='color-2 heebo bold button button-round tb-container-80 tb-text-center tb-button-hotel'>Book now</button>\
+			                    					<button class='color-4 heebo bold button button-round PH tb-container-80 tb-text-center tb-button-hotel' data-PH="+i+">Price history</button>\
 			                    				</div>\
 			                    			</div>\
 		                    				<div class='DF TotalPrice'>\
-		                    					<span class='text-right heebo font-size-2 color-6'>Total<br><b class='price montserrat color-4' data-price="+hotel.price+">$"+hotel.price+"</b></span>\
+		                    					<span class='text-right tb-text-center tb-container-100 heebo font-size-2 color-6'>Total<br><b class='price montserrat color-4' data-price="+hotel.price+">$"+hotel.price+"</b></span>\
 		                    				</div>\
 	                    				</div>\
-	                    				<div id="+i+" class='container-70 hide DF FW'>\
+	                    				<div id="+i+" class='container-70 hide DF FW tb-container-100'>\
 	                    					<div class='container-50 text-left'>\
-	                    						<span class='Heebo bold color-2'>Price history for 2017</span>\
+	                    						<span class='Heebo bold color-2 font-size-2'>Price history for 2017</span>\
 	                    					</div>\
-	                    					<div class='container-50 text-right '>\
-	                    						<span class='back-desc heebo color-5 PH' data-PH="+i+">Back to description</span>\
+	                    					<div class='container-50 text-right' style='cursor:pointer;'>\
+	                    						<img class='BD' src='images/back-description.svg'/>\
+	                    						<span class='font-size-5 back-desc heebo color-5' data-PH="+i+">Back to description</span>\
 	                    					</div>\
-											<div id='Chart-"+i+"' class='container-100' style='height: 200px;'></div>\
+	                    					<canvas id='bar-chart-"+i+"' width='400' height='100' data-hasChart='0'></canvas>\
 	                    				</div>\
 	                    			</li>";
 	                    $("#HotelsList").append(item);
@@ -230,30 +231,73 @@ function SearchHotels(){
 	                		$(this).append("<li class='stars'></li>");
 	                	}
 	                });
+	                $(".back-desc").click(function() {
+	                	var Pos = $(this).attr('data-PH');
+	                	console.log(Pos)
+	                	$('#Description-'+Pos).toggleClass('hide');
+	                	$('#'+Pos).toggleClass('hide');
+	                });
 	                $(".PH").click(function() {
 	                	var Pos = $(this).attr('data-PH');
 	                	console.log(Pos)
 	                	$('#Description-'+Pos).toggleClass('hide');
 	                	$('#'+Pos).toggleClass('hide');
-	                		Morris.Bar({
-							  element: "Chart-"+Pos,
-							  resize: true,
-							  data: [
-							  	{x: ret.hotels[Pos].price_history[0].month, y: ret.hotels[Pos].price_history[0].value},
-							  	{x: ret.hotels[Pos].price_history[1].month, y: ret.hotels[Pos].price_history[1].value},
-							  	{x: ret.hotels[Pos].price_history[2].month, y: ret.hotels[Pos].price_history[2].value},
-							  	{x: ret.hotels[Pos].price_history[3].month, y: ret.hotels[Pos].price_history[3].value},
-							  	{x: ret.hotels[Pos].price_history[4].month, y: ret.hotels[Pos].price_history[4].value},
-							  	{x: ret.hotels[Pos].price_history[5].month, y: ret.hotels[Pos].price_history[5].value},
-							  	{x: ret.hotels[Pos].price_history[6].month, y: ret.hotels[Pos].price_history[6].value}
-							  ],
-							  grid: false,
-							  xkey: 'x',
-							  ykeys: ['y'],
-							  labels: ['Price']
-							}).on('click', function(i, row){
-							  console.log(i, row);
+	                	var HC = $('#bar-chart-'+Pos).attr('data-hasChart');
+	                	if (HC == 0) {
+	                		var bar_ctx = document.getElementById('bar-chart-'+Pos).getContext('2d');
+	                		var purple_orange_gradient = bar_ctx.createLinearGradient(10, 0, 0, 170);
+							purple_orange_gradient.addColorStop(0, '#F98100');
+							purple_orange_gradient.addColorStop(1, '#F3997D');
+							var chart = new Chart(bar_ctx, {
+							    // The type of chart we want to create
+							    type: 'bar',
+							    // The data for our dataset
+							    data: {
+							        labels: [
+							        	ret.hotels[Pos].price_history[0].month, 
+							        	ret.hotels[Pos].price_history[1].month, 
+							        	ret.hotels[Pos].price_history[2].month, 
+							        	ret.hotels[Pos].price_history[3].month, 
+							        	ret.hotels[Pos].price_history[4].month, 
+										ret.hotels[Pos].price_history[5].month, 
+										ret.hotels[Pos].price_history[6].month
+									],
+							        datasets: [{
+							            label: "Price",
+										backgroundColor: purple_orange_gradient,
+										hoverBackgroundColor: purple_orange_gradient,
+										hoverBorderWidth: 2,
+										hoverBorderColor: '#F3997D',
+							            data: [
+							            	ret.hotels[Pos].price_history[0].value,
+							            	ret.hotels[Pos].price_history[1].value,
+							            	ret.hotels[Pos].price_history[2].value,
+							            	ret.hotels[Pos].price_history[3].value,
+							            	ret.hotels[Pos].price_history[4].value,
+							            	ret.hotels[Pos].price_history[5].value,
+							            	ret.hotels[Pos].price_history[6].value
+							            ],
+							        }]
+							    },
+							    // Configuration options go here
+								options: {
+									responsive: true,
+								     scales: {
+								       xAxes: [{
+								         display: true,
+								         barPercentage: 0.4,
+								       }],
+								       yAxes: [{
+								         display: false,
+								         ticks: {
+								                beginAtZero: true
+								            }
+								       }],
+								     }
+			    				  }
 							});
+	                		$('#bar-chart-'+Pos).attr('data-hasChart', '1');
+	                	}
 	                });
 	                $("span.status").toggleClass('hide');
 			} 
@@ -261,6 +305,10 @@ function SearchHotels(){
 	}
 }
 $(document).ready(function() {
+	$('#nav-icon').click(function(){
+		$(this).toggleClass('open');
+		$("ul.menu").toggleClass('tb-hide');
+	});
 	$("#slider-range").slider({
 		range: true,
 		min: 100,
