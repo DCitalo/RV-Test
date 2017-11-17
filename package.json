@@ -1,8 +1,8 @@
 {
-  "name": "Yube-Test",
+  "name": "RV-Test",
   "version": "0.0.1",
   "private": true,
-  "description": "Teste para Front-end na empresa Yube.",
+  "description": "Teste para Front-end na empresa Red Venture.",
   "scripts": {
     "start": "node app.js"
   },
